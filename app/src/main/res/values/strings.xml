@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Actividad04</string>
+    <string name="calcula_el_imc">Calcula el IMC</string>
+    <string name="menu_">Menu</string>
+    <string name="calculadora_1">Calculadora 1</string>
+    <string name="calculadora_2">Calculadora 2</string>
+    <string name="_salir">Salir</string>
+
+    <!--Strings genericos-->
+    <string name="txt_btn0">0</string>
+    <string name="txt_btn1">1</string>
+    <string name="txt_btn2">2</string>
+    <string name="txt_btn3">3</string>
+    <string name="txt_btn4">4</string>
+    <string name="txt_btn5">5</string>
+    <string name="txt_btn6">6</string>
+    <string name="txt_btn7">7</string>
+    <string name="txt_btn8">8</string>
+    <string name="txt_btn9">9</string>
+    <string name="txt_btndec">.</string>
+    <string name="txt_btnplus">+</string>
+    <string name="txt_btnmenos">-</string>
+    <string name="txt_btnMultiplicar">x</string>
+    <string name="txt_btndividir">/</string>
+    <string name="txt_btnigual">=</string>
+    <string name="txt_btnce">CE</string>
+    <string name="back_">BACK</string>
+
+
+    <!--Calculadora01 APP-->
+    <string name="txt_btnDelete"><![CDATA[<]]></string>
+    <string name="textPantalla">%1$s</string>
+
+    <!--Calculadora02 APP-->
+    <string name="botonLimpiarC">C</string>
+    <string name="resultado_texto">%1$s%2$s%3$s</string>
+
+    <!--IMC APP-->
+    <string name="txt_btnIMC">IMC</string>
+    <string name="Weight">%d</string>
+    <string name="Age">%d</string>
+    <string name="Height">%d cm</string>
+    <string name="calculate">CALCULAR</string>
+    <string name="IMCHeight">ALTURA</string>
+    <string name="IMCWeight">PESO</string>
+    <string name="Man">HOMBRE</string>
+    <string name="PlusAge">+</string>
+    <string name="LessAge">-</string>
+    <string name="LessWeight">-</string>
+    <string name="MoreWeight">+</string>
+    <string name="mujer">MUJER</string>
+    <string name="HeightNumbers">120 cm</string>
+    <string name="AgeNumber">60</string>
+    <string name="WeightNumber">60</string>
+    <string name="IMCAge">EDAD</string>
+    <string name="ManPicture">A picture of a man</string>
+    <string name="WomanPicture">A picture of a woman</string>
+    <string name="RangeSliderDescription">Height Selector</string>
+    <string name="ReturnButton">Botón volver</string>
+    <string name="imc_result">Tu IMC es: %1$s. %2$s</string>
+    <string name="DecreaseWeightButton">botón para disminuir el peso</string>
+    <string name="MoreWeightButton">Botón para aumentar el peso</string>
+    <string name="calcular_el_imc">Calcular el IMC</string>
+    <string name="simbolo_infinito">El logo de la app. Un símbolo de infinito.</string>
+    <string name="consejo_salud">Para obtener más información, visita la <a href="https://www.sspa.juntadeandalucia.es/servicioandaluzdesalud/clicsalud/">Consejería de Salud</a>.</string>
+</resources>
