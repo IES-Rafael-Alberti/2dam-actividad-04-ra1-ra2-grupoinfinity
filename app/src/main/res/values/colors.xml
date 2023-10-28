@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!--degradado fondo -->
+    <color name="colorDegradado1">#2B125A</color>
+    <color name="colorDegradado2">#4A14A9</color>
+    <color name="colorDegradado3">#161F51</color>
+
+    <!-- degradado botón peso -->
+    <color name="pesoDegradado1">#9E7600</color>
+    <color name="pesoDegradado2">#CCB700</color>
+    <color name="pesoDegradado3">#AE8300</color>
+
+    <!-- degradado botón altura -->
+    <color name="alturaDegradado1">#000000</color>
+    <color name="alturagradado2">#000000</color>
+    <color name="alturaDegradado3">#000000</color>
+
+    <!-- degradado botón edad -->
+    <color name="edadDegradado1">#000000</color>
+    <color name="edadDegradado2">#000000</color>
+    <color name="edadDegradado3">#000000</color>
+
+    <!-- degradado botón calcular -->
+    <color name="calcularDegradado1">#E6B011</color>
+    <color name="calcularDegradado2">#7B6F03</color>
+    <color name="calcularDegradado3">#FFCE3C</color>
+
+    <!-- Otros colores usados en el proyecto -->
+    <color name="orange">#FF521D</color>
+    <color name="red">#D52222</color>
+    <color name="botones">#0090FF</color>
+    <color name="green">#0FB647</color>
+    <color name="my_light_primary">#FF5733</color>
+    <color name="my_dark_primary">#000000</color>
+    <color name="my_dark_background">#333333</color>
+    <color name="dark_gray">#576875</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="window_background">#111111</color>
+    <color name="io_background">#222222</color>
+    <color name="gold">#938A3C</color>
+    <color name="color1">#673AB7</color>
+    <color name="color2">#8869BD</color>
+    <color name="color3">#403755</color>
+
+</resources>

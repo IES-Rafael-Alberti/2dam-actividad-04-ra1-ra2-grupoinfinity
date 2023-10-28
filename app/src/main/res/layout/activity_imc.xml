@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="32dp"
+    android:background="@drawable/fondo_degradado"
+    tools:context=".IMCActivity">
+
+    <!-- Primer CardView: "Hombre" -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:cardBackgroundColor="#538BFB"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/cardView2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- LinearLayout: Contiene la imagen y el texto para "Hombre" -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="146dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <!-- ImageView: Muestra la imagen para "Hombre" -->
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:contentDescription="@string/ManPicture"
+                android:src="@drawable/hombre"
+                tools:ignore="ImageContrastCheck" />
+
+            <!-- TextView: Muestra el texto "Hombre" -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Man"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Segundo CardView: Contiene el botón para seleccionar "Mujer" -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="169dp"
+        android:layout_height="146dp"
+        android:layout_marginEnd="10dp"
+        app:cardBackgroundColor="#FB7FFB"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cardView1"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- LinearLayout: Contiene la imagen y el texto para "Mujer" -->
+        <LinearLayout
+            android:layout_width="167dp"
+            android:layout_height="146dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <!-- ImageView: Muestra la imagen para "Mujer" -->
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:contentDescription="@string/WomanPicture"
+                android:src="@drawable/mujer"
+                tools:ignore="ImageContrastCheck" />
+
+            <!-- TextView: Muestra el texto "Mujer" -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mujer"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Tercer CardView: Contiene el selector de altura -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:cardBackgroundColor="#1BDC5C"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView1">
+
+        <!-- LinearLayout: Contiene el TextView para mostrar la
+         altura seleccionada y el RangeSlider para seleccionar la altura -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- TextView: Muestra el texto "ALTURA" -->
+            <TextView
+                android:id="@+id/textViewNumeroAltura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/IMCHeight"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <!-- TextView: Muestra la altura seleccionada -->
+            <TextView
+                android:id="@+id/tvHeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/HeightNumbers"
+                android:textColor="#000000"
+                android:textSize="38sp"
+                android:textStyle="bold" />
+
+            <!-- RangeSlider: Permite seleccionar la altura -->
+            <com.google.android.material.slider.RangeSlider
+                android:id="@+id/rangeSliderAltura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/RangeSliderDescription"
+                android:valueFrom="120"
+                android:valueTo="250" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Cuarto CardView: Contiene los botones para
+    incrementar y decrementar el peso -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="118dp"
+        android:layout_height="134dp"
+        android:layout_margin="50dp"
+        app:cardBackgroundColor="#FBE201"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/cardView5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3"
+        tools:ignore="TextSizeCheck">
+
+        <!-- LinearLayout: Contiene el TextView para mostrar
+         el peso y los botones para incrementar y decrementar el peso -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- TextView: Muestra el texto "PESO" -->
+            <TextView
+                android:id="@+id/textViewPeso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/IMCWeight"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <!-- TextView: Muestra el peso seleccionado -->
+            <TextView
+                android:id="@+id/textViewNumeroPeso"
+                android:layout_width="104dp"
+                android:layout_height="wrap_content"
+                android:text="@string/WeightNumber"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <!-- LinearLayout: Contiene los botones para incrementar
+             y decrementar el peso -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Button: Disminuye el peso cuando se hace clic en él -->
+                <Button
+                    android:id="@+id/botonMenosPeso"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/DecreaseWeightButton"
+                    android:text="@string/LessAge"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <!-- Button: Aumenta el peso cuando se hace clic en él -->
+                <Button
+                    android:id="@+id/botonMasPeso"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/MoreWeightButton"
+                    android:text="@string/MoreWeight"
+                    android:textColor="#000000"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Quinto CardView: Contiene los botones para incrementar
+     y decrementar la edad -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView5"
+        android:layout_width="118dp"
+        android:layout_height="134dp"
+        android:layout_margin="50dp"
+        app:cardBackgroundColor="#e74c3c"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cardView4"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3"
+        tools:ignore="TextSizeCheck">
+
+        <!-- LinearLayout: Contiene el TextView para mostrar la
+        edad y los botones para incrementar y decrementar la edad -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- TextView: Muestra el texto "EDAD" -->
+            <TextView
+                android:id="@+id/textViewEdad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/IMCAge"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <!-- TextView: Muestra la edad seleccionada -->
+            <TextView
+                android:id="@+id/textViewNumeroEdad"
+                android:layout_width="108dp"
+                android:layout_height="wrap_content"
+                android:text="@string/AgeNumber"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <!-- LinearLayout: Contiene los botones para incrementar
+             y decrementar la edad -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Button: Disminuye la edad cuando se hace clic en él -->
+                <Button
+                    android:id="@+id/botonMenosEdad"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/LessAge"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <!-- Button: Aumenta la edad cuando se hace clic en él -->
+                <Button
+                    android:id="@+id/botonMasEdad"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/PlusAge"
+                    android:textColor="#000000"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- FloatingActionButton: Botón para volver a MainActivity -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabBackMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_media_previous"
+        android:contentDescription="@string/ReturnButton"/>
+
+    <!-- Button: Botón para calcular el IMC -->
+    <Button
+        android:id="@+id/botonCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:shadowColor="#5F1FA4"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="@string/calculate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
